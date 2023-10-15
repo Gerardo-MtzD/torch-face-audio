@@ -22,8 +22,9 @@ def _main(video_flag: bool, audio_flag: bool) -> None:
         t1.join()
     if audio:
         t2.join()
+    return
 
 
 if __name__ == '__main__':
     _main(True, True)
-    sys.exit()
+    exit()
